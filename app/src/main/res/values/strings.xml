@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sandbox1</string>
+    <string name="base_url">http://www.nutrients-supplements.com</string>
+    <string name="banners_path">/magentoApi/magento_banners.php</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
