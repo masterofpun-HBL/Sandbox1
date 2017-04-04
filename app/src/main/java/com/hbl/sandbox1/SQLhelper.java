@@ -61,7 +61,7 @@ public class SQLhelper extends SQLiteOpenHelper {
     public Banners getBanner(String id) {
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM " + tablename + " WHERE " + this._0 + " = " + id + " LIMIT 1", new String[]{});
-        if (cursor == null)
+        if (null == cursor)
             return null;
 
         cursor.moveToFirst();
@@ -96,7 +96,7 @@ public class SQLhelper extends SQLiteOpenHelper {
     public int getBannersCount() {
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM " + tablename, null);
-        if (cursor == null)
+        if (null == cursor)
             return -1;
         cursor.moveToFirst();
         int count = cursor.getInt(0);
